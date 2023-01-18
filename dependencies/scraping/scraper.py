@@ -44,7 +44,7 @@ class Scraper:
             return
 
     def get_meta_data(self):
-        """get the data"""
+        """get the meta data"""
         sublinks = []
         meta_html = self.get_request(self.url)
         soup = BeautifulSoup(meta_html, 'html.parser')
